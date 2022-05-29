@@ -1,0 +1,5 @@
+services:
+
+  gh05tpl_influxdb_client.client_factory:
+    class: Gh05tPL\SimpleInfluxDbClientBundle\Factory\ClientFactory
+    public: false

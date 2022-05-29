@@ -1,0 +1,7 @@
+services:
+
+  gh05tpl_influxdb_client.client_registry:
+    class: Gh05tPL\SimpleInfluxDbClientBundle\Registry\ClientRegistry
+    public: true
+
+  Gh05tPL\SimpleInfluxDbClientBundle\Registry\ClientRegistry: '@gh05tpl_influxdb_client.client_registry'

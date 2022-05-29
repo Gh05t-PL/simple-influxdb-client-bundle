@@ -1,0 +1,21 @@
+{
+    "name": "gh05tpl/simple-influxdb-client-bundle",
+    "description": "Simple bundle of influxdb client for symfony framework",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^8",
+        "influxdata/influxdb-client-php": "^2.8",
+        "symfony/framework-bundle": "^5.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gh05tPL\\SimpleInfluxDbClientBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gh05t-pl"
+        }
+    ]
+}
