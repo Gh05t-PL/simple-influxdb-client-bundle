@@ -43,6 +43,7 @@ class SimpleInfluxDbClientExtension extends \Symfony\Component\HttpKernel\Depend
             $config['organization'],
             $config['bucket'],
             $config['precision'],
+            $config['timeout'],
         ]);
 
         $clientDefinition->setFactory([new Reference('gh05tpl_influxdb_client.client_factory'), 'createClient']);

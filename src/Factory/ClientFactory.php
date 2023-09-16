@@ -6,13 +6,13 @@ use InfluxDB2\Client;
 
 class ClientFactory
 {
-
     public function createClient(
         string $url,
         string $token,
         string $organization,
         string $bucket,
         string $precision,
+        int $timeout,
     ): Client
     {
         return new Client([
@@ -21,6 +21,7 @@ class ClientFactory
             'org' => $organization,
             'bucket' => $bucket,
             'precision' => $precision,
+            'timeout' => $timeout,
         ]);
     }
 }
